@@ -1,3 +1,11 @@
+function showwtxt(){
+    const txt = document.getElementById("animation-st")
+    setTimeout(() => {
+        txt.innerText = "Kezdődik a varázslat!"        
+    }, 3000);
+}
+showwtxt()
+
 function vissza(){
     const countdown = document.getElementById('countdown')
     let colors = ["orange","purple","red","Cadetblue","yellow","coral","green","cyan","DeepPink","Dodgerblue"]
@@ -14,3 +22,21 @@ function vissza(){
     }, 1000);
 }  
 vissza()
+
+
+function functionst(){
+    let seged = 0
+    const addli = setInterval(() => {
+        
+        
+        const ul = document.getElementById("dynamic-list")
+        let li = document.createElement('li')
+        li.textContent = "Új elem"
+        ul.appendChild(li)
+        seged++
+        if(seged == 3){
+            clearInterval(addli)
+        }
+
+    }, 2000);
+}
