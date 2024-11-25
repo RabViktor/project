@@ -44,3 +44,10 @@
     margin-top: 20px;
     font-size: 30px;
 }
+#lists{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
